@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sibling Selectors</title>
+    <style>
+    div + p{
+        color:red;
+    }
+    div ~ p{
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <!--
+     1. adjucent sibling (+)
+     2. General sibling (~)
+    -->
+    <section>
+        <div>
+            <p>Demo Text 01</p>
+            <p>Demo Text 02</p>
+        </div>
+        <p>Demo Text 03</p>
+        <p>Demo Text 04</p>
+        <section>
+            <p>Demo Text 05</p>
+            <p>Demo Text 06</p>
+        </section>
+        <p>Demo Text 07</p>
+        <p>Demo Text 08</p>
+        <div>
+            <p>Demo Text 09</p>
+            <p>Demo Text 10</p>
+            <p>Demo Text 11</p>
+        </div>
+        <p>Demo Text 12</p>
+        <p>Demo Text 13</p>
+    </section>
+</body>
+</html>

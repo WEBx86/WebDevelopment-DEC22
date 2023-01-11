@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinator Selector</title>
+
+    <style>
+        #container{
+            background-color: aqua;
+        }
+        section>.ContainerChild{
+            margin: 5px;
+            border: 2px solid blue;
+            width: 200px;
+            padding: 10px;
+        }
+        section>div>div{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        #Div04{
+            color: red;
+        }
+         section h1{
+            text-decoration: underline;
+            background-color: white;
+            color: black;
+        } 
+
+       section p{
+        text-decoration: underline;
+       }
+
+    </style>
+</head>
+<body>
+    <!--
+        1. Child Selector (>)
+        2. descendant Selector ( ) space
+        3. Sibling Selector 
+             i. General Siblig (~)
+             ii. adjuscent sibling (+)
+    -->
+    <section id="container">
+        <div class="ContainerChild">
+            <p>Para 01</p>
+            <p>Para 02</p>
+            <p>Para 03</p>
+            <p>Para 04</p>
+        </div>
+        <div class="ContainerChild">
+            <div>
+                <p>Para 05</p>
+                <p>Para 06</p>
+                <p>Para 07</p>
+                <p>Para 08</p>
+                <p>Para 09</p>
+                <p>Para 10</p>
+            </div>
+        </div>
+        <div class="ContainerChild">
+            <main>
+                <p>Para 11</p>
+                <p>Para 12</p>
+                <p>Para 13</p>
+                <p>Para 14</p>
+                <p>Para 15</p>
+            </main>
+        </div>
+        <div class="ContainerChild" id="Div04">
+            <p>
+                <p>
+                    <p>
+                        <p>Para 16</p>
+                        <p>Para 17</p>
+                    </p>
+                </p>
+            </p>
+        </div>
+        <div>
+            <p>Para 18</p>
+            <p>
+                <h1>Hello Para 19</h1>
+            </p>
+            <p>
+                <h2>Hello Para 20</h2>
+            </p>
+            <p>
+                <h3>Hello Para 21</h3>
+            </p>
+        </div>
+
+    </section>
+</body>
+</html>
