@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Block And Inline Elements</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
+        section{
+            border: 1px solid;
+            background-color: black;
+        }
+        div>a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <a href="#">Home</a>
+        </div>
+        <div> 
+            <a href="#">About</a>
+        </div>
+        <div> 
+            <a href="#">Contact Us</a>
+        </div>
+        <div> 
+            <a href="#">Help</a>
+        </div>
+    </section>
+</body>
+</html>
