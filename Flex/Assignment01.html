@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+        header{
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: white;
+            background-color: Orange;
+        }
+        section{
+            display: flex;
+        }
+        #Sidebar{
+            background-color: rgb(238, 169, 41);
+            flex-grow: 1;
+        }
+        #MainContent{
+            background-color: rgba(253, 197, 93, 0.937);
+            flex-grow: 8;
+            padding: 5px;
+        }
+        ul{
+            padding-left: 60px;
+        }
+        li{
+            padding: 10px;
+            font-size: 20px;
+        }
+        li>a{
+            text-decoration: none;
+            color: white;   
+            padding: 5px;   
+        }
+        li>a:hover{
+            color: rgb(235, 119, 12);
+            border-radius:3px;
+        }
+        .Product{
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(199, 238, 148, 0.898);
+        }
+        .Items{
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            flex-grow:1;
+            background-color: rgb(244, 189, 147);
+        }
+        footer{
+            margin: 0px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+        }
+        footer>p{
+            margin: 0px;
+            color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Electronic Shop</p>
+    </header>
+    <section>
+        <div id="Sidebar">
+            <ul>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Mouse</a></li>
+                <li><a href="#">Monitor</a></li>
+            </ul>
+        </div>
+        <div id="MainContent">
+            <div class="Product">
+                <div class="Items"></div>
+                <div class="Items"></div>
+                <div class="Items"></div>
+            </div>
+            <div class="Product">
+                <div class="Items"></div>
+                <div class="Items"></div>
+                <div class="Items"></div>
+            </div>
+            <div class="Product">
+                <div class="Items"></div>
+                <div class="Items"></div>
+                <div class="Items"></div>
+            </div>
+            <div class="Product">
+                <div class="Items"></div>
+                <div class="Items"></div>
+                <div class="Items"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <P>Email: webx86infotech@gmail.com</P>
+        <P>Mobile: +91 8177972499</P>
+    </footer>
+</body>
+</html>
