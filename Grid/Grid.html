@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        #Container{
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 200px 200px 200px;
+            /* column-gap: 20px;
+            row-gap: 30px; */
+            /* gap: 50px; */
+          
+        }
+        #Container>div{
+            height: 100%;
+            width: 100%;
+            background-color: gray;
+            border: 1px solid white;
+        }
+        #div01{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start:1;
+            grid-row-end:3; */
+            grid-area: 1/1/3/3;
+            /* grid-area: row-start / column start / row end / column end;   */
+        }
+        #div02{
+           grid-area: 1/3/3/4;
+        }
+
+        /*
+           grid-column-start: ___ Line Number____ ;
+           grid-column-end: _____ Line Number ____;
+
+           grid-row-start:_____ Line Number ______;
+           grid-row-end:____ line Number _____;
+        
+        */
+    </style>
+</head>
+<body>
+    <section id="Container">
+       <div id="div01">
+        <h1>Block 01</h1>
+       </div>
+       <div id="div02">
+        <h1>Block 02</h1>
+       </div>
+       <div>
+        <h1>Block 03</h1>
+       </div>
+       <div>
+        <h1>Block 04</h1>
+       </div>
+       <div>
+        <h1>Block 05</h1>
+       </div>
+       <div>
+        <h1>Block 06</h1>
+       </div>
+       <div>
+        <h1>Block 07</h1>
+       </div>
+       <div>
+        <h1>Block 08</h1>
+       </div>
+       <div>
+        <h1>Block 09</h1>
+       </div>
+       <div>
+        <h1>Block 10</h1>
+       </div>
+    </section>
+</body>
+</html>

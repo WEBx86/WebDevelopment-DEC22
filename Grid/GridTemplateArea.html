@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        section{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-areas: 'ABC ABC x y' 'MySelf MySelf p p' 'MySelf MySelf Q R';
+        }
+        section>div{
+            border: 1px solid;
+            background-color: aqua;
+            height: 100%;
+        }
+        #Div01{
+            grid-area:ABC;
+        }
+        #Div02{
+            grid-area:x;
+        }
+        #Div03{
+            grid-area:y;
+        }
+        #Div04{
+            grid-area:MySelf;
+        }
+        #Div05{
+            grid-area:p;
+        }
+        #Div06{
+            grid-area:Q;
+        }
+        #Div07{
+            grid-area:R;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="Div01">1</div>
+        <div id="Div02">2</div>
+        <div id="Div03">3</div>
+        <div id="Div04">4</div>
+        <div id="Div05">5</div>
+        <div id="Div06">6</div>
+        <div id="Div07">7</div>
+    </section>
+</body>
+</html>
