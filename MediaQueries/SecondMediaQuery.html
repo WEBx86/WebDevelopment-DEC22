@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .Container{
+            border: 1px solid red;
+            overflow: auto;
+        }
+        .col{
+            width: 23%;
+            height: 200px;
+            margin: 1%;
+            float: left;     
+        }
+
+        @media screen and (max-width:600px){
+            .col{
+                width: 46%;
+                height: 200px;
+                margin: 2%;
+                float: left;     
+            }
+        }
+
+        @media screen and (max-width:300px){
+            .col{
+                width: 92%;
+                height: 200px;
+                margin: 4%;
+                float: left;     
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="Container"> 
+        <div class="col">
+            <img src="../Assets/Facebook.png" alt="Facebook" height="100%" width="100%">
+        </div>
+        <div class="col">
+            <img src="../Assets/Instagram.jfif" alt="Instagram" height="100%" width="100%">
+        </div>
+        <div class="col">
+            <img src="../Assets/Tree.jpg" alt="Twitter" height="100%" width="100%">
+        </div>
+        <div class="col">
+            <img src="../Assets/SnapChat.png" alt="Snap" height="100%" width="100%">
+        </div>
+    </section>
+</body>
+</html>
