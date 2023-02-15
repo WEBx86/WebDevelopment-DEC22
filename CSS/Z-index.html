@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z - Index</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header{
+            padding: 15px;
+            background-color: brown;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+        nav{
+            background-color: black;
+            padding: 20px;
+            position: sticky;
+            top: 120px;
+        }
+        nav>div{
+            display: inline-block;
+        }
+        div>a{
+            color:white;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 2px 10px;
+        }
+        section{
+            padding: 10px; 
+        }
+        section>div{
+            margin: 10px;
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+            display: inline-block;
+            opacity: 0.5;
+        }
+        footer{
+            padding: 40px;
+            text-align: center;
+            background-color: crimson;
+            color: white;
+        }
+        img{
+            position: absolute;
+            top: 0px;
+            z-index: -3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Electronic Shop</p>
+    </header>
+        <nav>
+            <div><a href="#">Home</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Contact Us</a></div>
+            <div><a href="#">Help</a></div>
+        </nav>
+    <section style="position: relative;z-index: -2;">
+        <img src="../Assets/Tree.jpg" alt="Tree" height="300px" width="300px">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <footer>
+        copyright@2023
+    </footer>
+</body>
+</html>

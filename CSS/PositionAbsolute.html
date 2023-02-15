@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute Position</title>
+    <style>
+         div{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            color: white;    
+            position: absolute;
+        }
+        #Demo01{
+            top:0px;
+            left:0px;
+            right: 600px;
+            bottom: 600px;
+        }
+        #Demo02{
+            top:0px;
+            left:600px;
+            right:0px;
+            bottom: 600px;
+        }
+        #Demo03{
+            top:600px;
+            left:600px;
+            right: 0px;
+            bottom: 0px;
+        }
+        #Demo04{
+            top:600px;
+            left:0px;
+            right: 600px;
+            bottom: 0px;
+        }
+        #container02{
+            border: 2px solid green;
+            margin: 5px;
+            height: 500px;
+        }
+        #container01{
+            padding: 5px;
+            border: 2px solid blue;
+        }
+        main{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section id="container01">
+        <main style="background-color:black" id="">Section One Division</main>
+    </section>
+    <section id="container02" style="position:fixed;width: 100%;">
+        <div style="background-color:red" id="Demo01">Demo 01</div>
+        <div style="background-color:blue" id="Demo02">Demo 02</div>
+        <div style="background-color:chartreuse" id="Demo03">Demo 03</div>
+        <div style="background-color:darkmagenta" id="Demo04">Demo 04</div>
+    </section>
+</body>
+</html>
