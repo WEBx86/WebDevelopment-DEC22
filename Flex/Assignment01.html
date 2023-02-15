@@ -76,6 +76,24 @@
             color: white;
             padding: 8px;
         }
+
+        @media screen and (max-width:550px)
+        {
+            #Sidebar{
+                background-color: rgb(238, 169, 41);
+                width: 100%;
+            }
+            section{
+               flex-direction: column;
+            }
+            #Sidebar>ul{
+                display: flex;
+                list-style-type:none;
+            }
+            section{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
