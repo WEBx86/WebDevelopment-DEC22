@@ -111,18 +111,18 @@
 // }
 
 // console.log(y);
-var StoreValue = '';
-for (let i = 0; i < 10; i++){
+// var StoreValue = '';
+// for (let i = 0; i < 10; i++){
 
-    if (i == 4)
-    {
-        continue;
-    }
-    else
-    {
-        StoreValue += i;
-    }    
-}
+//     if (i == 4)
+//     {
+//         continue;
+//     }
+//     else
+//     {
+//         StoreValue += i;
+//     }
+// }
 // console.log(StoreValue);
 // var i = 0;
 // var j = 0;
@@ -171,37 +171,236 @@ for (let i = 0; i < 10; i++){
 // }
 // else
 // {
-//     console.log("Please Enter Correct Day"); 
+//     console.log("Please Enter Correct Day");
 // }
 
-var Day = "Wednesday";
+// var Day = "Wednesday";
 
-switch (Day)
-{
-    default:
-        console.log("Enter valid day");
-        break;
-    case "Monday":
-        console.log("Monday");
-        break;
-    case "Tuesday":   
-    case "Wednesday":
-        console.log("Wednesday");
-        break;
-    case "Thursday":
-        console.log("Thursday");
-        break;
-    case "Friday":
-        console.log("Friday");
-        break;
-    case "Saturday":
-        console.log("Saturday");
-        break;
-    case "Sunday":
-        console.log("Sunday");
-        break;
-}
+// switch (Day)
+// {
+//     default:
+//         console.log("Enter valid day");
+//         break;
+//     case "Monday":
+//         console.log("Monday");
+//         break;
+//     case "Tuesday":
+//     case "Wednesday":
+//         console.log("Wednesday");
+//         break;
+//     case "Thursday":
+//         console.log("Thursday");
+//         break;
+//     case "Friday":
+//         console.log("Friday");
+//         break;
+//     case "Saturday":
+//         console.log("Saturday");
+//         break;
+//     case "Sunday":
+//         console.log("Sunday");
+//         break;
+// // }
+
+// var x = 30;
+// var y = 50;
+
+// switch (true)
+// {
+//     case x > y:
+//         console.log("Wrong Condition");
+//         break;
+//     case x < y:
+//     case y > x:
+//         console.log("Correct Condtion");
+//         break;
+//     default:
+//         console.log("Nothing is happen");
+// }
+
+/*  
+for in  - 
+   
+        object   
+        var x = {
+            name:"web",
+            age:20
+        }; 
+
+        var Num = [10,20,30,40,50];        
+         index number 
+*/
+
+// const object = { p: 1, q: 2, r: 3, s: 4 };
+// const Num = [10, 20, 30, 40, 50, 60];
+
+// for (let ObjectData in Num){
+//     //console.log(ObjectData);
+// }
+
+// const StudentName = ["Test01", "Test02", "Test03", "Test04"];
+
+// for (let Names of Num) {
+   
+//     if (Names == 40)
+//     {
+//         if (Names % 2 == 0)
+//         {
+//             console.log(`Given Number ${Names} is even`);
+//         }
+//     }
+// }
+
+// var Name = "Web Development";
+// var x = 0;
+// var y = 10;
+// do {
+//     console.log(Name);
+//     x++;
+// } while (x < y);
+
+// var Marks = 90;
+
+// if (Marks > 60)
+// {
+//     console.log("First Class With Distinction");
+// }
+// else {
+//     console.log("Second with B Grade");
+// }
+
+/*
+ Ternory  = ?
 
 
+ Condition ? TrueExpression : FalseExpression;
+ 
+*/
+
+// var Marks = 90;
+
+// const Result01 = Marks > 60 ? "First Class With Distinction" : "Second Class with B Grade";
+// console.log(Result01);
 
 
+// if (StudentMarks >= 70 && StudentMarks <= 95)
+// {
+//     console.log("Grad A");
+// }
+// else if (StudentMarks >= 50 && StudentMarks <= 69)
+// {
+//     console.log("Grad B");
+// }
+// else if (StudentMarks >= 30 && StudentMarks <= 49)
+// {
+//     console.log("Grad C");
+// }
+// else {
+//     console.log("Fail");
+// }
+
+
+// var StudentMarks = 10;
+
+// const Result = StudentMarks >= 70 && StudentMarks <= 95 ? "Grad A" : StudentMarks >= 50 && StudentMarks <= 69 ? "Grad B" : StudentMarks >= 30 && StudentMarks <= 49 ? "Grad C" : "Fail";
+// console.log(Result);
+
+
+// var strName = "WebDevelopment";
+
+
+// for (let GetName of ArrName)
+// {
+//     console.log(GetName);
+// }
+
+// var object = { a: 1, b: 2, c: 3 };
+
+// var ArrName = ["A", "B", "c"];
+// for (let GetName in ArrName)
+// {
+//     console.log(ArrName[GetName]);
+// }
+
+
+// const y = arr.toString();
+// console.log(y);
+
+// const a = arr.join("+");
+// console.log(a);
+
+// var StudentNames = ["Test 01", "Demo", "Hello", "World"];
+// StudentNames.sort();
+// console.log(StudentNames);
+
+// Push -
+// var arr = [10, 20, 30, 40, 50];
+// arr.push(60);   // Insert Last
+// console.log(arr);
+// arr.pop();   // Remove Last Element
+// console.log("New Array : ", arr);
+// arr.pop();
+// console.log("New Array : ", arr);
+
+// arr.shift(); // Remove First Element
+// arr.shift();
+// console.log(arr);
+// arr.unshift(20);
+// arr.unshift(10);
+// console.log(arr);
+// Name.reverse();
+// console.log(Name);
+
+// console.log(Array.isArray(Name));
+
+// let Name = ["Test 01", "Demo", "Hello", "World"];
+// let StudentName = ["Web", "Development", "TextData"];
+// let ArrThree = [10, 20, 30, 40];
+// const x = Name.concat(StudentName,ArrThree);
+
+// console.log(x);
+// slice
+// Not Modify Original Array
+// ArrName.slice(begin,end);
+//ArrName.slice(1,3);
+
+//var Values = ["Test 01", "Demo", "Hello", "World", "Web", "Development"];
+// var x = Values.slice();
+// console.log(x);
+
+
+//splice - splice(start,deleteCount,replace);
+// var StudetName = ["Test 01", "Demo", "Hello", "World", "Web", "Development"];
+// StudetName.splice(0,6,"Hello","JavaScript","Web","Development");
+// console.log(StudetName);
+
+// var x = "Web Development";
+// var y = 'Hello World';
+// console.log(x.length);
+// console.log(y.length);
+
+// console.log("Hello All Welcome To x");
+
+// console.log(`${y} ${x}`);
+
+// console.log(strName.indexOf("o"));
+
+// for (let i = 0; i <= strName.length - 1; i++)
+// {
+//     console.log(strName[i]);
+// }
+
+// var strName = "Hello World";
+// var NameData = "Test Data";
+// console.log(strName);
+// console.log(strName.toUpperCase());
+// console.log(strName.toLowerCase());
+// console.log(strName.replace("Hello", "WEBx86"));
+
+// console.log(strName.concat(NameData));
+// console.log(strName + " " + NameData);
+let NewString = "WEBx86 Infotech";
+
+console.log(NewString.trim());
+console.log(NewString.slice(2, 4));
+console.log(NewString);
