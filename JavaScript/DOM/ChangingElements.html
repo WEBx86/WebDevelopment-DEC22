@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Element</title>
+</head>
+<body>
+    <p id="para">Hello Data</p>
+
+    <p class="Test">Test 01</p>
+    <p class="Test">Test 02</p>
+    <p class="Test">Test 03</p>
+    <p class="Test">Test 04</p>
+    <p class="Test">Test 05</p>
+
+    <img id="ImageData" src="../../Assets/Tree.jpg" alt="Tree" height="200px" width="200px">
+
+    <button onclick="ChangeImage()">Click me</button>
+
+    <script>
+       var x = document.getElementById("para");
+       x.style.color = "red";
+       var y = document.getElementsByClassName("Test");
+       var getLenght = y.length;
+       console.log(getLenght);
+
+       var colors = ["yellow","orange","green","brown","navy"];
+
+       for(let i = 0; i <= getLenght - 1; i++){
+          y[i].style.color = colors[i];
+       }
+
+       function ChangeImage(){
+          let x = document.getElementById("ImageData");
+          x.src = "../../Assets/nature.jpg";
+       }
+
+    </script>
+</body>
+</html>

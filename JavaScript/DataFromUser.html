@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
-        var x = window.prompt("Enter Your Name");
-        console.log(x);
+        debugger;
+        let arr = [10, 20, 30, 40];
+        const NewReduceArray = arr.reduce((acc, value, index, arr) => {
+            debugger;
+            return acc + value;
+        });
+
+        console.log(NewReduceArray);
     </script>
 </body>
+
 </html>

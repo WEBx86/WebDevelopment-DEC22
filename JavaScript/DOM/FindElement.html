@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Finding HTML Data </title>
+</head>
+<body>
+  <p id="Para01"> Hello JavaScript </p>
+  <p id="demo"></p>
+
+  <p class="DemoData">Demo Text 01</p>
+  <p class="DemoData">Demo Text 02</p>
+  <p class="DemoData">Demo Text 03</p>
+  <p class="DemoData">Demo Text 04</p>
+
+  <div>Hello Div01</div> 
+  <div>Hello Div02</div> 
+  <div>Hello Div03</div> 
+  <div>Hello Div04</div> 
+
+  <p class="Hello">Hello p01</p>
+  <p class="Hello">Hello p02</p>
+  <p class="Hello">Hello p03</p>
+  <p class="Hello">Hello p04</p>
+
+  <div class="Hello">Hello Div01</div>
+  <div class="Hello">Hello Div02</div>
+  <div class="Hello">Hello Div03</div>
+  <div class="Hello">Hello Div04</div>
+
+  <script>
+    
+  // var x = document.getElementById("demo").innerHTML = "Hello New Data";
+  // console.log(x);
+
+//   var ByClassName = document.getElementsByClassName("DemoData");
+ 
+//   for(let i = 0; i<= ByClassName.length-1;i++){
+//     document.write(ByClassName[i].innerHTML + "<br>");
+//   }
+
+//    var getTag = document.getElementsByTagName("div");
+//    console.log(getTag[0].innerHTML);
+//    document.write(getTag[0].innerHTML);
+
+var x = document.querySelectorAll("div.Hello");
+console.log(x);
+
+  </script>
+</body>
+</html>
