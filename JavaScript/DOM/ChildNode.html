@@ -6,13 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Child Nodes</title>
 </head>
-<body>
+<body>  
     
+    <p id="para01"> Text Data 01</p>
+    <p class="Demo">Text Data 02</p>
+    <p class="Demo">Text Data 03</p>
+    <p class="Demo">Text Data 04</p>
+
+    <ul><li>Product 01</li>
+        <li>Product 02</li>
+        <li>Product 03</li>
+        <li>Product 04</li></ul>
+
+
+      <section>
+         <nav id="demo">
+
+         </nav>
+      </section> 
+
+      <header>
+          <p id="HeaderPara">
+            <span>Demo Data</span>
+          </p>
+      </header> 
+
     <script>
-        var CreatePara = document.createElement("p");  // <p></p>
+        var CreatePara = document.createElement("p");  //<p>WEBx86 Infotech</p>
         var CreateNewData = document.createTextNode("WEBx86 Infotech");
         CreatePara.appendChild(CreateNewData);
         document.body.appendChild(CreatePara);
+
+        var x = document.body.children;
+        console.log(x);
+
+
+      let Data = document.querySelector("ul");
+      
+      let FirstChild = Data.firstChild;
+      console.log(FirstChild);
+
+      let LastChild = Data.lastChild;
+      console.log(LastChild);
+
+      let NextData = para01.nextElementSibling.nextElementSibling.innerHTML;
+      console.log(NextData);
+
+      console.log(Data.parentNode);
+      console.log(document.getElementById("demo").parentNode);
+      console.log(document.getElementById("HeaderPara").parentNode);
+
     </script>
 </body>
 </html>
