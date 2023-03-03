@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+
+    <style>
+        div{
+            height: 200px;
+            border: 2px solid green;
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        I. Mouse Events 
+              1. onclick
+              2. oncontextmenu
+              3. onmouseout 
+
+       II. Keyboard Events  
+              1. onkeydown 
+              2. onkeyup 
+              3. onkeypress 
+              
+       III. Form Events 
+              1. onfocus 
+              2. onblur 
+              3. onchange 
+              4. onsubmit
+    -->
+
+     <div>
+        <p>Hello Data</p>
+        <p>Awesome Data</p>
+     </div>
+
+     <button onmouseover="Display()" onmouseout="Display02()">
+        click me
+     </button><br><br>
+
+     <input type="text" onblur="DisplayEvent(this)" onfocus="DisplayEvent02(this)"/>  <br><br>
+
+     <input type="text" onchange="alert('Change Data')"/>  <br><br>
+
+
+     <form action="" onsubmit="Hello()">
+       1:  <input type="text"/><br>
+           <label id="abcd" style="visibility:hidden;">ABCD</label>
+
+       Send : <input type="submit" value="submit"/>
+
+     </form>
+
+
+
+    <script>
+
+        function Hello(){
+            document.getElementById("abcd").style.visibility = "visible";
+        }
+        function Display(){
+            var x = document.getElementsByTagName("p");
+            for(let i = 0; i < x.length; i++){
+                x[i].style.display = "none";
+            }
+        }
+
+        function Display02(){
+            var x = document.getElementsByTagName("p");
+            for(let i = 0; i < x.length; i++){
+                x[i].style.display = "block";
+            }
+        }
+
+        function DisplayEvent02(data){
+                data.style.color = "green";
+        }
+
+        function DisplayEvent(data){
+                data.style.color = "red";
+        }
+    </script>
+</body>
+</html>
