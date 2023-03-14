@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <style>
+       /* Part II */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .hide{
+            display: none;
+        }
+        .Car{
+            width: 100px;
+            height: 150px;
+            padding: 10;
+            background-color: aqua;
+            position: absolute;
+            /* left: 120px;*/
+            bottom: 120px;
+        }
+        .gameArea{
+            width: 600px;
+            height: 100vh;
+            background: rgb(57, 55, 55);
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Part I start-->
+    <div class="carGame">
+        <div class="score"></div>
+        <div class="startScreen">
+            <p>Press Here to start Your Game</p>
+        </div>
+    </div>
+
+    <div class="gameArea hide">
+
+    </div>
+<!-- Part I End -->
+<script src="game.js"></script>
+</body>
+</html>
